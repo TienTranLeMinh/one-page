@@ -4,3 +4,53 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+}
+
+#nav{
+    
+}
+
+#nav li{
+    display: inline-block;
+}
+
+#nav li a{
+    color: #FFF;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav li:hover a{
+    color: #000;
+    background-color: #CCC;
+}
+
+#nav .subnav{
+    display: none;
+}
+
+#main{
+
+}
+
+#slider{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}
