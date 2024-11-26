@@ -13,6 +13,10 @@ html {
 
 }
 
+.clear {
+    clear: both;
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -159,6 +163,26 @@ html {
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
+}
+
+#content .members-list{
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;    
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
 }
 
 #footer {
