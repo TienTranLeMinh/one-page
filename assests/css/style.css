@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Commn */
+
 html {
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
-}
-
-#main {
-
 }
 
 .clear {
@@ -20,6 +19,74 @@ html {
 .text-while {
     color: #FFF !important;
 }
+
+.text-center {
+    text-align: center !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.btn {
+    color: #FFF;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #CCC;
+    cursor: pointer;
+}
+
+/* Main */
+
+#main {
+
+}
+
 
 #header {
     position: fixed;
@@ -142,7 +209,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -171,12 +238,6 @@ html {
 
 #content .members-list{
     margin-top: 48px;
-}
-
-#content .member-item {
-    float: left;
-    width: 33.33333%;    
-    text-align: center;
 }
 
 #content .member-name {
@@ -228,13 +289,7 @@ html {
 
 /* Places */
 .places-list {
-    margin: 32px -8px 48px;
-}
-
-.place-item {
-    float: left;    
-    width: 33.33333%;
-    padding: 0 8px;
+    margin-top: 32px;
 }
 
 .place-img {
@@ -267,20 +322,59 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: #FFF;
-    background-color: #000;
-    text-decoration: none;
-    padding: 10px 16px;
-    display: inline-block;
-    margin-top: 15px;
+/* Contact Content */
+.contact-content {
+    margin-top: 48px;
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #CCC;
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #CCC;
+    width: 100%;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
 }
 
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover,
+#footer .copy-right a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copy-right {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a {
+    color: rgba(0, 0, 0, 0.6);
 }
