@@ -84,7 +84,7 @@ html {
 /* Main */
 
 #main {
-
+    /* overflow: hidden; */
 }
 
 
@@ -96,12 +96,23 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1;
+    overflow: hidden;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
+    padding: 0 21px;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #FFF;
     font-size: 20px;
@@ -113,6 +124,15 @@ html {
     background-color: #F44336;
     cursor: pointer;
 }
+
+#header .mobile-menu-btn:hover {
+    background-color: #CCC;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
 
 #nav {
     display: inline-block;
@@ -209,9 +229,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
